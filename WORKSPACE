@@ -17,8 +17,6 @@ hedron_compile_commands_setup()
 # gTest library for cpp testing
 http_archive(
     name = "com_google_googletest",
-    url = "https://github.com/google/googletest/archive/refs/tags/v1.13.0.zip",
-    sha256 = "ffa17fbc5953900994e2deec164bb8949879ea09b411e07f215bfbb1f87f4632",
-    #build_file = "@//:gtest.BUILD",
-    strip_prefix = "googletest-1.13.0",
+    url = "https://github.com/google/googletest/archive/refs/tags/release-1.12.1.zip",
+    strip_prefix = "googletest-release-1.12.1",
 )
