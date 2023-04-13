@@ -9,3 +9,14 @@ cc_test(
     "@com_google_googletest//:gtest_main",
     ],
 )
+
+cc_test(
+  name = "tests",
+  size = "small",
+  srcs = glob(["**/*.cc"]),
+  deps = [
+    "//main:hello-greet",
+    "//lib:hello-time",
+    "@com_google_googletest//:gtest_main",
+    ],
+)
