@@ -17,6 +17,7 @@ cc_test(
   deps = [
     "//main:hello-greet",
     "//lib:hello-time",
+    "//lib:rpm_calculation",
     "@com_google_googletest//:gtest_main",
     ],
 )
