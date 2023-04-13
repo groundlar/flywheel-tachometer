@@ -4,5 +4,8 @@ cc_test(
   name = "hello-test",
   size = "small",
   srcs = ["hello-test.cc"],
-  deps = ["@com_google_googletest//:gtest_main"],
+  deps = [
+    "//main:hello-greet",
+    "@com_google_googletest//:gtest_main",
+    ],
 )
