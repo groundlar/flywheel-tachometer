@@ -5,6 +5,7 @@ refresh_compile_commands(
 
     targets = {
       "//main:hello-world": "",
+      "//test:hello-test": "",
       #"//:my_output_1": "--important_flag1 --important_flag2=true",
     },
     # No need to add flags already in .bazelrc. They're automatically picked up.
