@@ -10,10 +10,17 @@ cc_library(
     ],
 )
 
+cc_library  (
+    name = "util",
+    hdrs = ["util.h"],
+    visibility = [ "//visibility:public" ],
+)
+
 cc_library(
     name = "rpm_calculation",
     srcs = ["rpm_calculation.cc"],
     hdrs = ["rpm_calculation.h"],
+    deps = ["util"],
     visibility = [
         "//main:__pkg__",
         "//test:__pkg__"

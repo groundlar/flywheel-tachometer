@@ -18,6 +18,7 @@ cc_test(
     "//main:hello-greet",
     "//lib:hello-time",
     "//lib:rpm_calculation",
+    "//lib:util",
     "@com_google_googletest//:gtest_main",
     ],
 )
