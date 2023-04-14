@@ -13,5 +13,6 @@ cc_binary(
     deps = [
         ":hello-greet",
         "//lib:hello-time",
+        "//lib:rpm_calculation",
     ],
 )
